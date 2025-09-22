@@ -1,5 +1,11 @@
 ---
-import Navbar from "../components/Navbar.astro"
+import '../styles/global.css';
+import NavbarScroll from "../components/NavbarScroll.astro"
+import NavbarLanding from '../components/NavbarLanding.astro';
+import Logo from '../assets/images/cses-logo.png';
+import Landing from '../assets/images/landing.jpg';
+
+import Footer from '../components/Footer.astro';
 ---
 
 <!DOCTYPE html>
@@ -11,9 +17,21 @@ import Navbar from "../components/Navbar.astro"
 	<meta name="generator" content={Astro.generator} />
 	<title>Document</title>
 </head>
-<body class="p-2">
-	<header class="w-screen h-12 flex justify-center">
-		<Navbar /> 
-	</header>
+<body class="py-2 bg-main-bg">
+	<!-- nav -->
+	<div class="w-full h-21 flex flex-col justify-center items-center">
+		<!-- <NavbarScroll /> -->
+		 <NavbarLanding />
+
+	</div>
+	<!-- hero image -->
+
+	<slot>
+		
+	</slot>
+	<div class="w-full">
+
+	</div>
+	
 </body>
 </html>

@@ -1,10 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+import Landing from '../assets/images/landing.jpg'
+
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	
+    <div class="w-full h-[600px] relative">
+        <h1 class="absolute inset-0 flex flex-col items-center justify-center text-white z-10 text-6xl font-bold bg-opaque-black">Carleton Student<span>Engineering Society</span></h1>
+        <img src={Landing.src} alt="" class="w-full h-full object-cover bg-opaque-black">
+    </div>
 </Layout>

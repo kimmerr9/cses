@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
-/* @theme {
+@theme {
+    --color-cses-red: rgb(146, 53, 46);
+    --color-main-bg: rgb(246, 246, 246);
+    --color-opaque-black: rgba(0, 0, 0, 0.5);
 
-} */
+    --shadow-shadow: 2px 2px 5px  hsla(0, 0%, 0%, 0.70);
+}
 
 * {
     box-sizing: border-box;

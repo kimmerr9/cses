@@ -1,0 +1,39 @@
+---
+import '../styles/global.css';
+import Logo from '../assets/images/cses-logo.png';
+
+import NavItem from './NavItem.astro';
+---
+<!-- nav on landing will be flush with the page -->
+
+<!-- nav on scroll -->
+<!-- <nav class="w-[80%] h-full bg-cses-red flex items-center justify-between rounded-full px-15">
+    <div class="">
+        <img src={Logo.src} alt="">
+    </div>
+    <ul class="list-none flex gap-5">
+        <NavItem id="about" content="About Us" />
+        <NavItem id="governance" content="Governance" />
+        <NavItem id="services" content="Services" />
+        <NavItem id="publications" content="Publications" />
+        <NavItem id="events" content="Events" />
+        <NavItem id="affiliation" content="Affiliation" />
+        <NavItem id="resources" content="Resources" />
+        <NavItem id="volunteer" content="Volunteer" />
+    </ul>
+</nav> -->
+
+<nav class="w-[80%] rounded-full h-full bg-cses-red flex justify-between items-center px-15">
+	<div class="logo">
+		<img src={Logo.src} alt="">
+	</div>
+	<div class="flex gap-5 text-xl">
+		<NavItem content="About Us"/>
+        <NavItem content="Governance"/>
+        <NavItem content="Services"/>
+        <NavItem content="Publications"/>
+        <NavItem content="Events"/>
+        <NavItem content="Affiliation"/>
+        <NavItem content="Resources"/>
+	</div>
+</nav>

@@ -1,0 +1,19 @@
+---
+import '../styles/global.css';
+import Logo from '../assets/images/cses-logo.png';
+import NavItem from './NavItem.astro';
+---
+<nav class="w-full rounded-full h-full bg-main-bg flex justify-between items-center px-15">
+	<div class="logo">
+		<img src={Logo.src} alt="">
+	</div>
+	<div class="flex gap-5 text-xl">
+		<NavItem content="About Us"/>
+        <NavItem content="Governance"/>
+        <NavItem content="Services"/>
+        <NavItem content="Publications"/>
+        <NavItem content="Events"/>
+        <NavItem content="Affiliation"/>
+        <NavItem content="Resources"/>
+	</div>
+</nav>
